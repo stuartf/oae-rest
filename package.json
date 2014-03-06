@@ -1,5 +1,31 @@
 {
-    "name": "oae-rest",
-    "main": "./lib/api.js",
-    "version": "0.0.1"
+  "name": "oae-rest",
+  "main": "./lib/api.js",
+  "description": "Open Academic Environment (OAE) REST client library",
+  "version": "4.3.0",
+  "homepage": "http://www.oaeproject.org",
+  "author": {
+    "name": "The Apereo Foundation",
+    "email": "oae-dev@collab.sakaiproject.org"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/oaeproject/oae-rest.git"
+  },
+  "bugs": {
+    "url": "https://github.com/oaeproject/oae-rest/issues"
+  },
+  "licenses": [
+    {
+      "type": "ECLv2",
+      "url": "http://opensource.org/licenses/ecl2.php"
+    }
+  ],
+  "dependencies": {
+    "request": "latest",
+    "underscore": "latest"
+  },
+  "engines": {
+    "node": ">=0.10"
+  }
 }
