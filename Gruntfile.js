@@ -41,7 +41,7 @@ module.exports = function(grunt) {
         // it work properly without the proper pre-release version
         // handling
         grunt.config.set('release.options.github.usernameVar', 'GITHUB_USERNAME');
-        grunt.config.set('release.options.github.usernameVar', 'GITHUB_PASSWORD');
+        grunt.config.set('release.options.github.passwordVar', 'GITHUB_PASSWORD');
 
         if (type === 'prerelease') {
             // Run the standard prerelease task, which will increment the
