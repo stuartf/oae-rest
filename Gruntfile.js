@@ -7,9 +7,7 @@ module.exports = function(grunt) {
         'release': {
             'options': {
                 'github': {
-                    'repo': 'oaeproject/oae-rest',
-                    'usernameVar': 'GITHUB_USERNAME',
-                    'passwordVar': 'GITHUB_PASSWORD'
+                    'repo': 'oaeproject/oae-rest'
                 }
             }
         }
@@ -37,6 +35,13 @@ module.exports = function(grunt) {
 
     grunt.registerTask('release-version', function(type) {
         type = type || 'prerelease';
+
+        // Only set these in the custom release-version task because
+        // we don't want to accidentally run `grunt release` and have
+        // it work properly without the proper pre-release version
+        // handling
+        grunt.config.set('release.options.github.usernameVar', 'GITHUB_USERNAME');
+        grunt.config.set('release.options.github.usernameVar', 'GITHUB_PASSWORD');
 
         if (type === 'prerelease') {
             // Run the standard prerelease task, which will increment the
