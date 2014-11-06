@@ -2,7 +2,7 @@
   "name": "oae-rest",
   "main": "./lib/api.js",
   "description": "Open Academic Environment (OAE) REST client library",
-  "version": "9.3.0",
+  "version": "9.3.1",
   "homepage": "http://www.oaeproject.org",
   "author": {
     "name": "The Apereo Foundation",
